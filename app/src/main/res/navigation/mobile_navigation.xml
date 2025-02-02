@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="org.ileewe.theseedjcli.ui.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_the_seed"
+        android:name="org.ileewe.theseedjcli.ui.fragments.TheSeedFragment"
+        android:label="@string/title_theSeeds"
+        tools:layout="@layout/fragment_the_seed" >
+        <action
+            android:id="@+id/action_navigation_the_seed_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_sermons"
+        android:name="org.ileewe.theseedjcli.ui.fragments.SermonsFragment"
+        android:label="@string/title_sermons"
+        tools:layout="@layout/fragment_sermons" >
+        <action
+            android:id="@+id/action_navigation_sermons_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_ministries"
+        android:name="org.ileewe.theseedjcli.ui.fragments.MinistriesFragment"
+        android:label="@string/title_ministries"
+        tools:layout="@layout/fragment_ministries" >
+        <action
+            android:id="@+id/action_navigation_ministries_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="org.ileewe.theseedjcli.ui.fragments.MoreFragment"
+        android:label="@string/more"
+        tools:layout="@layout/fragment_more" />
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="org.ileewe.theseedjcli.ui.fragments.DetailsFragment"
+        android:label="@string/details_title"
+        tools:layout="@layout/fragment_details">
+        <argument
+            android:name="articleDetail"
+            app:argType="org.ileewe.theseedjcli.model.Post" />
+    </fragment>
+
+    <activity
+        android:id="@+id/ministryPostsActivity"
+        android:name="org.ileewe.theseedjcli.ui.activities.MinistryPostsActivity"
+        android:label="activity_detail"
+        tools:layout="@layout/ministry_posts">
+
+
+    </activity>
+
+
+</navigation>

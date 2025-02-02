@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.home.HomeFragment">
+
+            <LinearLayout
+                android:id="@+id/remote_events"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingStart="@dimen/section_margin_start"
+                android:paddingEnd="@dimen/section_margin_start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/remote_text_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Announcement"
+                    android:layout_gravity="center_vertical|start"
+                    android:textSize="24sp"/>
+
+                <Button
+                    android:id="@+id/remote_btn_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Visit"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_gravity="center_vertical|end"
+                    android:textColor="@color/primaryDarkColor"
+                    android:background="@android:color/transparent"/>
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/home_latest_sermon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/remote_events"
+                android:orientation="vertical"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/lead_sermon_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:src="@drawable/image_background"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="latest sermon image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/section_margin_start"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginBottom="40dp"
+                    android:elevation="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/lead_sermon_image"
+                    app:layout_constraintEnd_toEndOf="@+id/lead_sermon_image"
+                    app:layout_constraintBottom_toBottomOf="@+id/lead_sermon_image"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lead_sermon_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/primaryColor"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12sp"
+                        tools:text="Devotional"/>
+
+                    <TextView
+                        android:id="@+id/lead_sermon_title"
+                        android:text=""
+                        android:layout_marginTop="0dp"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:textSize="32sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingMultiplier="1.18"
+                        tools:text="His Covenant Is Binding In Righteousness. "/>
+
+                    <TextView
+                        android:id="@+id/lead_sermon_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textColor="@android:color/secondary_text_dark"
+                        tools:text="June 16, 2022"/>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/section_devotion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/home_latest_sermon"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/section_devotion_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:layout_marginStart="@dimen/section_margin_start"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Devotionals"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Devotionals"/>
+
+                <TextView
+                    android:id="@+id/section_devotion_more"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:text="Show all"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="@android:color/black"
+                    tools:text="Show all"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/devotions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="@dimen/section_margin_start"
+                android:layout_marginEnd="@dimen/section_margin_end"
+                app:layout_constraintTop_toBottomOf="@id/section_devotion"
+                app:layout_constraintBottom_toTopOf="@id/section_sermons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/home_list_item" />
+
+
+            <LinearLayout
+                android:id="@+id/section_sermons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/devotions"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/section_sermon_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:layout_marginStart="@dimen/section_margin_start"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Sermons"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Sermons"/>
+
+                <TextView
+                    android:id="@+id/section_sermon_more"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:text="Show all"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="@android:color/black"
+                    tools:text="Show all"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sermons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="@dimen/section_margin_start"
+                android:layout_marginEnd="@dimen/section_margin_end"
+                app:layout_constraintTop_toBottomOf="@id/section_sermons"
+                app:layout_constraintBottom_toTopOf="@id/section_ministries"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/home_list_item" />
+
+
+            <LinearLayout
+                android:id="@+id/section_ministries"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/sermons"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/section_ministries_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:layout_marginStart="@dimen/section_margin_start"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Ministries"
+                    android:textColor="?android:attr/textColorPrimary"
+                    tools:text="Sermons"/>
+
+                <TextView
+                    android:id="@+id/section_ministries_more"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:layout_marginEnd="@dimen/section_margin_end"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:text="Show all"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:textAllCaps="false"
+                    android:background="@drawable/rounded_corners"
+                    android:textColor="@android:color/black"
+                    tools:text="Show all"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ministries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="@dimen/section_margin_start"
+                android:layout_marginEnd="@dimen/section_margin_end"
+                app:layout_constraintTop_toBottomOf="@id/section_ministries"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="80dp"
+                tools:listitem="@layout/home_list_item" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

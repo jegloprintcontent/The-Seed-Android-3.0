@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.MoreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/section_margin_start"
+        android:layout_marginEnd="@dimen/section_margin_end"
+        android:layout_marginTop="@dimen/section_margin_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/section_margin_top"
+            android:layout_marginStart="@dimen/section_margin_start"
+            android:text="@string/contact_contact_us_title"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="@dimen/section_margin_end"
+                    android:text="@string/contact_address_post_summary"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/contact_no_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_call_btn_title"
+                        android:textAlignment="textStart"
+                        android:paddingStart="2dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/primaryDarkColor"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:background="@android:color/transparent"
+                        android:focusable="true"
+                        tools:ignore="RtlSymmetry" />
+
+                    <Button
+                        android:id="@+id/contact_email_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_email_btn_title"
+                        android:textAlignment="textStart"
+                        android:paddingStart="2dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/primaryDarkColor"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:background="@android:color/transparent"
+                        android:focusable="true"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/section_margin_start"
+            android:text="@string/contact_feedback_title"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" android:text="@string/contact_feedback_message"/>
+
+                <Button
+                    android:id="@+id/feedback_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback_btn_title"
+                    android:textAlignment="textStart"
+                    android:paddingStart="2dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primaryDarkColor"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/section_margin_start"
+            android:text="@string/contact_prayer_request_title"
+            style="@style/TextAppearance.AppCompat.Large"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/contact_prayer_request_summary"/>
+
+                <Button
+                    android:id="@+id/prayer_request_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_request_btn_title"
+                    android:textAlignment="textStart"
+                    android:paddingStart="2dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/primaryDarkColor"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    android:focusable="true"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

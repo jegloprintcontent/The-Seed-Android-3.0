@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_the_seed"
+        android:icon="@drawable/the_seed"
+        android:iconTint="@color/black"
+        android:title="@string/title_theSeeds" />
+
+    <item
+        android:id="@+id/navigation_sermons"
+        android:icon="@drawable/ic_sermons"
+        android:title="@string/title_sermons" />
+
+    <item
+        android:id="@+id/navigation_ministries"
+        android:icon="@drawable/ic_church_ministries"
+        android:title="@string/title_ministries" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_more_menu"
+        android:title="@string/more"/>
+
+</menu>

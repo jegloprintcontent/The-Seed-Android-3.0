@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">The Seed</string>
+    <string name="title_home">Home</string>
+    <string name="title_theSeeds">The Seed</string>
+    <string name="title_sermons">Sermons</string>
+    <string name="title_ministries">Ministries</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details_title" />
+    <string name="sermons_not_found">We are unable to get you latest sermons at this time.</string>
+    <string name="share_article">Share</string>
+    <string name="settings_menu">Settings</string>
+    <string name="ministries_not_found">We are unable to get you latest ministry posts at this time.</string>
+
+    <!--Messaging -->
+    <string name="messaging_topic" translatable="false">seed</string>
+    <string name="messaging_subscription_token" translatable="false">FCM registration Token: %s</string>
+    <string name="notification_channel_id" translatable="false">org.ileewe.theseedjcli.notifications</string>
+    <string name="messaging_subscription_success">You have been subscribed successfully to %s</string>
+    <string name="messaging_subscription_removed">You have been unsubscribed successfully from %s</string>
+    <string name="messaging_subscription_failed">Unable to subscribe for notification service. Please check connection and try again</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+
+    <!-- Settings -->
+    <string name="settings_label">Settings</string>
+    <!-- Preference Titles -->
+    <string name="label_preference_category_general">General</string>
+    <string name="key_preference_category_general">general</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Notifications and message Preferences -->
+    <string name="key_pref_push_notification" translatable="false">notification</string>
+    <string name="title_pref_push_notification">Receive notifications</string>
+    <string name="pref_notification_summary">Yes/No</string>
+    <string name="pref_notification_summary_on">Yes</string>
+    <string name="pref_notification_summary_off">No</string>
+    <string name="pref_notification_default_value" translatable="false">true</string>
+
+    <!-- Reading pane text size Preferences -->
+    <string name="key_pref_text_size" translatable="false">text_size</string>
+    <string name="title_pref_text_size">Text size</string>
+    <string name="pref_text_size_summary">Preferred text size for devotions, sermons and ministries</string>
+    <string name="settings_regular_font_value" translatable="false">16</string>
+    <string name="pref_settings_large_font_label">Large</string>
+    <string name="pref_settings_regular_font_label">Regular</string>
+    <string name="pref_settings_small_font_label">Small</string>
+    <string name="settings_large_font_value" translatable="false">20</string>
+    <string name="settings_small_font_value" translatable="false">12</string>
+
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync content periodically</string>
+    <string name="content_sync_title">Download articles in the background</string>
+    <string name="content_sync_summary_on">Automatically downloads contents for a seamless app experience
+    </string>
+    <string name="content_sync_summary_off">Only download articles when manually requested</string>
+
+    <!-- About preferences -->
+    <string name="label_preference_category_about_app">The Seed</string>
+    <string name="key_preference_category_about_app">about_the_seed</string>
+    <string name="summary_preference_category_about_app">Application information</string>
+    <string name="title_pref_app_version">Version</string>
+    <string name="key_pref_app_version">version</string>
+    <string name="pref_version_summary">1.0</string>
+    <string name="title_pref_rate_app">Rate this app</string>
+    <string name="key_pref_rate_app">rate</string>
+    <string name="pref_rate_app_summary">Help other users enjoy this application</string>
+    <string name="google_play_store_error">Unable to launch play store</string>
+    <string name="more">More</string>
+    <string name="contact_feedback_title">Feedback</string>
+    <string name="contact_feedback_message">We can\'t wait to hear from you</string>
+    <string name="contact_prayer_request_title">Prayer Request</string>
+    <string name="contact_prayer_request_summary">Do you have a prayer request? We would love to pray along with you.</string>
+    <string name="feedback_btn_title">Send Feedback</string>
+    <string name="send_request_btn_title">Send request</string>
+    <string name="contact_contact_us_title">Contact us</string>
+    <string name="contact_call_btn_title">Call</string>
+    <string name="contact_email_btn_title">Email</string>
+    <string name="contact_address_post_summary">Jerusalem Church of The Lord International, \n 1 Jerusalem Avenue, Kilometer 4, \n Ikere Road, \n Ado-Ekiti, Ekiti State, \n Nigeria</string>
+    <string name="contact_church_phone_number">tel:+2349039650192</string>
+    <string name="lead_article_category_title">Devotional</string>
+    <string name="no_application_found">Unable to find application to complete the request</string>
+    <string name="title_pref_app_policy">Privacy Policy</string>
+    <string name="key_pref_app_policy">app_policy</string>
+    <string name="pref_policy_summary">Visit our privacy policy page</string>
+    <string name="privacy_policy_url">https://theseedjcli.ileewe.org/privacy-policy/</string>
+
+    <!-- Other string resources -->
+
+    <string name="play_audio">Play Audio</string>
+</resources>
